@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapsamlı Bilgisayar Kısayolları Kılavuzu</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Önceki tasarıma uygun koyu ve neon teması */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d; /* Ultra Koyu Arkaplan */
+            color: #e5e7eb; /* Açık Gri Metin */
+            min-height: 100vh;
+        }
+        .container-main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+        .shortcut-card {
+            background-color: #1a1a1a;
+            border-left: 4px solid #00ff00; /* Neon Yeşil Vurgu */
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .shortcut-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 255, 0, 0.15);
+        }
+        .key-combo {
+            background-color: #00ff00;
+            color: #0d0d0d;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-right: 4px;
+            display: inline-block;
+            box-shadow: 0 0 5px #00ff00;
+            font-family: monospace;
+        }
+        /* Yeni kısayollar için özel stil tanımı */
+        .key-combo-cyan {
+            background-color: #00ffff !important;
+            box-shadow: 0 0 5px #00ffff !important;
+        }
+
+        .category-title {
+            color: #00ff00;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .category-icon {
+            filter: drop-shadow(0 0 3px #00ff00);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-main">
+        <header class="text-center mb-12 py-8 bg-black/50 rounded-xl shadow-lg border border-[#00ff00]/30">
+            <h1 class="text-5xl font-extrabold text-[#00ff00] mb-3 tracking-wider">
+                HIZLI ERİŞİM: KISAYOL ARŞİVİ
+            </h1>
+            <p class="text-xl text-gray-400">Windows, Mac ve Tarayıcılar İçin En Temel Klavye Kısayolları.</p>
+        </header>
+
+        <!-- Kısayollar Bölümleri -->
+        <div class="space-y-12">
+            
+            <!-- 1. Genel Sistem Kısayolları (Windows & Mac Ortak) -->
+            <section id="genel">
+                <h2 class="category-title text-3xl font-bold flex items-center">
+                    <span class="category-icon mr-3">💻</span> Genel Sistem ve Düzenleme
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Kart 1 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Kopyala</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">C</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">C</span> (Mac)
+                        </p>
+                    </div>
+                    <!-- Kart 2 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Yapıştır</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">V</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">V</span> (Mac)
+                        </p>
+                    </div>
+                    <!-- Kart 3 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Kes</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">X</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">X</span> (Mac)
+                        </p>
+                    </div>
+                    <!-- Kart 4 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Geri Al</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">Z</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">Z</span> (Mac)
+                        </p>
+                    </div>
+                     <!-- Kart 5 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Tümünü Seç</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">A</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">A</span> (Mac)
+                        </p>
+                    </div>
+                    <!-- Kart 6 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Kaydet</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">S</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">S</span> (Mac)
+                        </p>
+                    </div>
+                    <!-- Kart 7 (İleri Al) -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">İleri Al (Yinele)</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">Y</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">Shift</span> + <span class="key-combo">Z</span> (Mac)
+                        </p>
+                    </div>
+                    <!-- Kart 8 (Pencere Kapatma) -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Aktif Pencereyi Kapat</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Alt</span> + <span class="key-combo">F4</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">W</span> (Mac)
+                        </p>
+                    </div>
+                    
+                    <!-- KULLANICI DENEME KARTI (Örnek Kart) -->
+                    <div class="shortcut-card p-5 rounded-lg bg-[#2a2a1a] border-[#ffcc00] shadow-md shadow-[#ffcc00]/20">
+                        <p class="text-lg font-semibold mb-2 text-[#ffcc00]">
+                            Ekran Görüntüsü Al (Örnek)
+                        </p>
+                        <p class="text-sm text-gray-300">
+                            <span class="key-combo">PrtScn</span> (Tüm ekranı panoya kopyalar)
+                        </p>
+                    </div>
+                    
+                    <!-- Lütfen yeni kısayolu bu yorumun altına EKLEYİN. -->
+                    
+                    <!-- YENİ KISAYOL: Windows + G (Xbox Game Bar Aç) -->
+                    <div class="shortcut-card p-5 rounded-lg bg-[#1a2a2a] border-[#00ffff] shadow-md shadow-[#00ffff]/20">
+                        <p class="text-lg font-semibold mb-2 text-[#00ffff]">Xbox Oyun Çubuğunu Aç</p>
+                        <p class="text-sm text-gray-300">
+                            <span class="key-combo key-combo-cyan">⊞ Win</span> + <span class="key-combo key-combo-cyan">G</span>
+                            <span class="text-gray-400 block mt-1">(Ekran kaydı ve widget'lar için ana merkez)</span>
+                        </p>
+                    </div>
+
+                    <!-- YENİ KISAYOL: Windows + Alt + R (Kayıt Başlat/Durdur) -->
+                    <div class="shortcut-card p-5 rounded-lg bg-[#1a2a2a] border-[#00ffff] shadow-md shadow-[#00ffff]/20">
+                        <p class="text-lg font-semibold mb-2 text-[#00ffff]">Ekran Kaydı Başlat/Durdur</p>
+                        <p class="text-sm text-gray-300">
+                            <span class="key-combo key-combo-cyan">⊞ Win</span> + <span class="key-combo key-combo-cyan">Alt</span> + <span class="key-combo key-combo-cyan">R</span>
+                            <span class="text-gray-400 block mt-1">(Arka planda anlık video kaydı başlatır)</span>
+                        </p>
+                    </div>
+
+                    <!-- YENİ KISAYOL: Windows + Alt + PrtScn (Aktif Pencereyi Kaydet) -->
+                    <div class="shortcut-card p-5 rounded-lg bg-[#1a2a2a] border-[#00ffff] shadow-md shadow-[#00ffff]/20">
+                        <p class="text-lg font-semibold mb-2 text-[#00ffff]">Aktif Pencereyi Kaydet (Oyun Çubuğu)</p>
+                        <p class="text-sm text-gray-300">
+                            <span class="key-combo key-combo-cyan">⊞ Win</span> + <span class="key-combo key-combo-cyan">Alt</span> + <span class="key-combo key-combo-cyan">PrtScn</span>
+                            <span class="text-gray-400 block mt-1">(Ekran görüntüsünü otomatik kaydeder)</span>
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 5. Metin İşleme ve Yazma Kısayolları -->
+            <section id="metin-isleme">
+                <h2 class="category-title text-3xl font-bold flex items-center">
+                    <span class="category-icon mr-3">📝</span> Metin İşleme ve Yazma
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Kart 1 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Koyu Yap (Bold)</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">B</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">B</span> (Mac)
+                        </p>
+                    </div>
+                    <!-- Kart 2 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Eğik Yap (Italic)</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">I</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">I</span> (Mac)
+                        </p>
+                    </div>
+                    <!-- Kart 3 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Altı Çizili</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">U</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">U</span> (Mac)
+                        </p>
+                    </div>
+                    <!-- Kart 4 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Sözcük Seçme</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">Shift</span> + <span class="key-combo">Sağ/Sol Ok</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. Windows Özel Kısayolları (Genişletilmiş) -->
+            <section id="windows">
+                <h2 class="category-title text-3xl font-bold flex items-center">
+                    <span class="category-icon mr-3">🖼️</span> Acil Kısayollar
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- YENİ KISAYOL: Win+Shift+Ctrl+B (Grafik Sürücüsünü Yeniden Başlat) -->
+                    <div class="shortcut-card p-5 rounded-lg bg-[#2a1a2a] border-[#ff00ff] shadow-md shadow-[#ff00ff]/20">
+                        <p class="text-lg font-semibold mb-2 text-[#ff00ff]">
+                            Grafik Sürücüsünü Yeniden Başlat
+                        </p>
+                        <p class="text-sm text-gray-300">
+                            <span class="key-combo">⊞ Win</span> + <span class="key-combo">Ctrl</span> + <span class="key-combo">Shift</span> + <span class="key-combo">B</span>
+                            <span class="text-gray-400 block mt-1">(Ekran donarsa kullanışlıdır)</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Kart 1 (Win+X) -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Güç Kullanıcısı Menüsü (Win+X)</p>
+                        <p class="text-sm">
+                            <span class="key-combo">⊞ Win</span> + <span class="key-combo">X</span>
+                            <span class="text-gray-400 block mt-1">(Aygıt Yöneticisi, Komut İstemi vb. için)</span>
+                        </p>
+                    </div>
+                    <!-- Kart 2 (Win+I) -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Ayarlar Penceresi Aç</p>
+                        <p class="text-sm">
+                            <span class="key-combo">⊞ Win</span> + <span class="key-combo">I</span>
+                        </p>
+                    </div>
+                    <!-- Kart 3 (Win+L) -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Ekranı Kilitle</p>
+                        <p class="text-sm">
+                            <span class="key-combo">⊞ Win</span> + <span class="key-combo">L</span>
+                        </p>
+                    </div>
+                    <!-- Kart 4 (Eski: Çalıştır) -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Çalıştır Penceresi</p>
+                        <p class="text-sm">
+                            <span class="key-combo">⊞ Win</span> + <span class="key-combo">R</span>
+                        </p>
+                    </div>
+                    <!-- Kart 5 (Eski: Görev Yöneticisi) -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Görev Yöneticisi</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">Shift</span> + <span class="key-combo">Esc</span>
+                        </p>
+                    </div>
+                    <!-- Kart 6 (Eski: Dosya Gezgini) -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Dosya Gezgini Aç</p>
+                        <p class="text-sm">
+                            <span class="key-combo">⊞ Win</span> + <span class="key-combo">E</span>
+                        </p>
+                    </div>
+                    <!-- Kart 7 (Eski: Masaüstü) -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Masaüstünü Göster/Gizle</p>
+                        <p class="text-sm">
+                            <span class="key-combo">⊞ Win</span> + <span class="key-combo">D</span>
+                        </p>
+                    </div>
+                    <!-- Kart 8 (YENİ: Görev Görünümü) -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Görev Görünümü (Sanal Masaüstü)</p>
+                        <p class="text-sm">
+                            <span class="key-combo">⊞ Win</span> + <span class="key-combo">Tab</span>
+                        </p>
+                    </div>
+                    <!-- Kart 9 (YENİ: Emoji Paneli) -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Emoji ve Sembol Paneli</p>
+                        <p class="text-sm">
+                            <span class="key-combo">⊞ Win</span> + <span class="key-combo">.</span> (Nokta)
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Mac Özel Kısayolları (Genişletilmiş) -->
+            <section id="mac">
+                <h2 class="category-title text-3xl font-bold flex items-center">
+                    <span class="category-icon mr-3">🍎</span> Mac İşletim Sistemi
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Kart 1 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Pencereyi Kapat</p>
+                        <p class="text-sm">
+                            <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">W</span>
+                        </p>
+                    </div>
+                    <!-- Kart 2 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Uygulamadan Çık</p>
+                        <p class="text-sm">
+                            <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">Q</span>
+                        </p>
+                    </div>
+                    <!-- Kart 3 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Spotlight Ara</p>
+                        <p class="text-sm">
+                            <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">Boşluk</span>
+                        </p>
+                    </div>
+                    <!-- Kart 4 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Tam Ekran Görüntüsü</p>
+                        <p class="text-sm">
+                            <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">Shift</span> + <span class="key-combo">3</span>
+                        </p>
+                    </div>
+                    <!-- Kart 5 (Zorla Çıkış) -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Uygulamadan Zorla Çıkış</p>
+                        <p class="text-sm">
+                            <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">Option</span> + <span class="key-combo">Esc</span>
+                        </p>
+                    </div>
+                    <!-- Kart 6 (Gizle) -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Aktif Uygulamayı Gizle</p>
+                        <p class="text-sm">
+                            <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">H</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Tarayıcı Kısayolları (Genişletilmiş) -->
+            <section id="tarayici">
+                <h2 class="category-title text-3xl font-bold flex items-center">
+                    <span class="category-icon mr-3">🌐</span> İnternet Tarayıcıları
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Kart 1 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Yeni Sekme Aç</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">T</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">T</span> (Mac)
+                        </p>
+                    </div>
+                    <!-- Kart 2 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Sekmeyi Kapat</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">W</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">W</span> (Mac)
+                        </p>
+                    </div>
+                    <!-- Kart 3 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Arama Kutusu/Sayfada Bul</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">F</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">F</span> (Mac)
+                        </p>
+                    </div>
+                    <!-- Kart 4 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Geçmişi Aç</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">H</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">H</span> (Mac)
+                        </p>
+                    </div>
+                    <!-- Kart 5 (İndirilenler) -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">İndirilenleri Aç</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">J</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">J</span> (Mac)
+                        </p>
+                    </div>
+                    <!-- Kart 6 (Yenile) -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Sayfayı Yenile</p>
+                        <p class="text-sm">
+                            <span class="key-combo">F5</span> / <span class="key-combo">Ctrl</span> + <span class="key-combo">R</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">R</span> (Mac)
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Erişilebilirlik ve Yardım Kısayolları -->
+            <section id="erisim">
+                <h2 class="category-title text-3xl font-bold flex items-center">
+                    <span class="category-icon mr-3">♿</span> Erişilebilirlik ve Yardım
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Kart 1 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Yardım Aç (Uygulama İçi)</p>
+                        <p class="text-sm">
+                            <span class="key-combo">F1</span>
+                        </p>
+                    </div>
+                    <!-- Kart 2 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Sayfa Zoom'u Sıfırla</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">0</span> (Sıfır)
+                        </p>
+                    </div>
+                    <!-- Kart 3 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Yazı Büyüt/Küçült (Tarayıcı)</p>
+                        <p class="text-sm">
+                            <span class="key-combo">Ctrl</span> + <span class="key-combo">+/-</span>
+                        </p>
+                    </div>
+                    <!-- Kart 4 -->
+                    <div class="shortcut-card p-5 rounded-lg">
+                        <p class="text-lg font-semibold mb-2 text-gray-100">Geliştirici Araçlarını Aç</p>
+                        <p class="text-sm">
+                            <span class="key-combo">F12</span> (Win) / <span class="key-combo">⌘ Cmd</span> + <span class="key-combo">Option</span> + <span class="key-combo">I</span> (Mac)
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-16 text-gray-600 border-t border-gray-800 pt-6">
+            <p class="text-sm">Daha fazla kısayol mu arıyorsun? Farklı bir işletim sistemi veya uygulama (örneğin: Word, Excel) eklememi istersen söylemen yeterli!</p>
+        </footer>
+
+    </div>
+</body>
+</html>
